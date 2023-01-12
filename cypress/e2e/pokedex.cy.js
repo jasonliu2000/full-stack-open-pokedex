@@ -6,7 +6,7 @@ describe('Pokedex', function() {
   })
 
   it('pokemon page can be navigated to', function() {
-    // assume test is already at the localhost:5000 address?
+    cy.visit('http://localhost:5000')
     cy.contains('ivysaur').click()
     cy.contains('chlorophyll')
   })
